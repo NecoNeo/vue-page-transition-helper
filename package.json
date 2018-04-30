@@ -1,0 +1,22 @@
+{
+  "name": "vue-page-transition-helper",
+  "version": "0.0.1",
+  "description": "a page transition helper for building native app like vue project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NecoNeo/vue-page-transition-helper.git"
+  },
+  "keywords": [
+    "vue-page-transition-helper"
+  ],
+  "author": "nicholas zhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NecoNeo/vue-page-transition-helper/issues"
+  },
+  "homepage": "https://github.com/NecoNeo/vue-page-transition-helper#readme"
+}

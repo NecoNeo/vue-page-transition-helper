@@ -2,6 +2,13 @@
 
 ## description
 helps to get a push pop state when you build an app with a native app like behavior based on vue-router
+it returns different value regardless of depth of link:
+<pre><code>
+// returns 'forward'
+this.$router.push('/some-link')
+// returns 'back'
+this.$router.go(-1)
+</code></pre>
 
 ## usage
 
@@ -41,13 +48,12 @@ export default new Router({
 App.vue
 
 <pre><code>
-...
 <transition :name="transitionName">
   <router-view></router-view>
 </transition>
-...
+</pre></code>
 
-<script>
+<pre><code>
 import { VuePageTransitionHelper } from 'vue-page-transition-helper'
 
 export default {
@@ -70,6 +76,6 @@ export default {
     }
   }
 }
-</script>
+
 ...
 </code></pre>

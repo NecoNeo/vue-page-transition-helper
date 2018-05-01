@@ -2,8 +2,13 @@
   "name": "vue-page-transition-helper",
   "version": "0.0.1",
   "description": "a page transition helper for building native app like vue project",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/NecoNeo/vue-page-transition-helper/issues"
   },
-  "homepage": "https://github.com/NecoNeo/vue-page-transition-helper#readme"
+  "homepage": "https://github.com/NecoNeo/vue-page-transition-helper#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.2",
+    "typescript": "^2.8.3"
+  }
 }

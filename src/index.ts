@@ -1,4 +1,6 @@
-/**/
+/**
+ * Class PageTransitionHelper
+ */
 
 class PageTransitionHelper {
 
@@ -8,11 +10,11 @@ class PageTransitionHelper {
   private state = this.FORWARD_TRANSITION;
   private isPopState = false;
   
-  constructor(router) {
+  constructor(router: any) {
     window.addEventListener('popstate', () => {
       this.onPopState();
     })
-    router.beforeEach((to, from, next) => {
+    router.beforeEach((to: any, from: any, next: any) => {
       this.setTransitionState();
       next();
     })
@@ -31,13 +33,16 @@ class PageTransitionHelper {
     this.isPopState = false;
   }
 
-  public getState() {
+  /**
+   * @returns {string} - type of transition: 'forward', 'back'
+   */
+  public getState(): string {
     return this.state;
   }
 }
 
 export const VuePageTransitionHelper = {
-  install(Vue, { router }) {
+  install(Vue: any, { router }: any) {
     const helper: PageTransitionHelper = new PageTransitionHelper(router)
   }
 }

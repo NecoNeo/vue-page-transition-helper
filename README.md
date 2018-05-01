@@ -48,9 +48,9 @@ export default new Router({
 App.vue
 
 <pre><code>
-<transition :name="transitionName">
-  <router-view></router-view>
-</transition>
+&lt;transition :name="transitionName"&gt;
+  &lt;router-view>&lt;/router-view&gt;
+&lt;/transition&gt;
 </pre></code>
 
 <pre><code>

@@ -42,7 +42,16 @@ class PageTransitionHelper {
 }
 
 export const VuePageTransitionHelper = {
+  __instance: PageTransitionHelper,
   install(Vue: any, { router }: any) {
-    const helper: PageTransitionHelper = new PageTransitionHelper(router)
+    const helper: PageTransitionHelper = new PageTransitionHelper(router);
+  },
+  getState(): string {
+    if (this.__instance) {
+      return this.__instance.getState();
+    } else {
+      console.warn('VuePageTransitionHelper is not installed!');
+      return '';
+    }
   }
 }

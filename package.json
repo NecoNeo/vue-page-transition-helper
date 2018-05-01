@@ -1,6 +1,6 @@
 {
   "name": "vue-page-transition-helper",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "a page transition helper for building native app like vue project",
   "main": "dist/index.js",
   "files": [

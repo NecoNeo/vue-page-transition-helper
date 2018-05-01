@@ -41,10 +41,22 @@ class PageTransitionHelper {
   }
 }
 
-export const VuePageTransitionHelper = {
-  __instance: PageTransitionHelper,
-  install(Vue: any, { router }: any) {
-    const helper: PageTransitionHelper = new PageTransitionHelper(router);
+export const VuePageTransitionHelper: {
+  __instance?: PageTransitionHelper,
+  __installed: boolean,
+  install(Vue: any, { router }: any): void,
+  getState(): string
+} = {
+  __instance: null,
+  __installed: false,
+  install(Vue: any, { router }) {
+    if (this.__installed) return;
+    if (!router) {
+      console.warn('router is not undefined!');
+      return;
+    }
+    this.__installed = true;
+    this.__instance = new PageTransitionHelper(router);
   },
   getState(): string {
     if (this.__instance) {

@@ -1,6 +1,6 @@
 {
   "name": "vue-page-transition-helper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a page transition helper for building native app like vue project",
   "main": "dist/index.js",
   "files": [
@@ -16,7 +16,11 @@
     "url": "git+https://github.com/NecoNeo/vue-page-transition-helper.git"
   },
   "keywords": [
-    "vue-page-transition-helper"
+    "vue",
+    "transition",
+    "router",
+    "push",
+    "pop"
   ],
   "author": "nicholas zhi",
   "license": "MIT",

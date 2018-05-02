@@ -1,8 +1,8 @@
 # vue-page-transition-helper
 
 ## description
-helps to get a push pop state when you build an app with a native app like behavior based on vue-router
-it returns different value regardless of depth of link:
+helps to get a push pop state when you build an app with a native app like behavior based on vue-router<br>
+returns different value regardless of depth of link:
 <pre><code>
 // returns 'forward'
 this.$router.push('/some-link')
